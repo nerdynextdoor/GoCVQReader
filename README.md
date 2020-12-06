@@ -1,7 +1,8 @@
 # GoCVQReader
 
 
-#how to setup goCV for windows 
+run main.go for single use
 
-#how to setup zbar 
+#realtime mapping is in realtimeBarcode folder, open file and follow steps in the README.md
+
 
