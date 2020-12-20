@@ -40,6 +40,8 @@ func recognizeFile(path string) {
 	}
 	elapsed := time.Since(start)
 	log.Printf("Binomial took %s", elapsed)
+
+	//fmt.Printf("image.Decode error: %v\n", goqr.)
 }
 
 func main() {
