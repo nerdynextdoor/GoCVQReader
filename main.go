@@ -44,8 +44,8 @@ func recognizeFile(path string) {
 
 	}
 	elapsed := time.Since(start)
-	log.Printf("Binomial took %s", elapsed)
-	fmt.Printf("globel Test  %v \n", goqr.GV)
+	log.Printf("Time taken to find QRcode: %s", elapsed)
+	fmt.Printf("QR corner location:  %v \n", goqr.GV)
 
 	//p1.x
 	angleTest(goqr.Gx1, goqr.Gy1, goqr.Gx2, goqr.Gy2)
@@ -68,13 +68,13 @@ func angleTest(x1, y1, x2, y2 float64) {
 	ydiff := y2 - y1
 	xdiff := x2 - x1
 	radians := math.Atan2(ydiff, xdiff)
-	fmt.Printf("Ydiff: %v\n", ydiff)
-	fmt.Printf("Xdiff: %v\n", xdiff)
-	fmt.Printf("radians: %v\n", radians)
+	//fmt.Printf("Ydiff: %v\n", ydiff)
+	//fmt.Printf("Xdiff: %v\n", xdiff)
+	//fmt.Printf("radians: %v\n", radians)
 
-	angle := radians * 180 / math.Pi
+	angle := int(radians * 180 / math.Pi)
 
-	fmt.Printf("Angle: %v\n", angle)
+	fmt.Printf("QR Rotation: %v degrees\n", angle)
 
 }
 
