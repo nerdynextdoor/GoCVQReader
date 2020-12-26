@@ -15,7 +15,7 @@ import (
 	"github.com/llgcode/draw2d/draw2dimg"
 	"gonum.org/v1/plot"
 
-	"github.com/liyue201/goqr"
+	"./QRreader/goqr"
 )
 
 func recognizeFile(path string) {
@@ -57,11 +57,6 @@ func main() {
 	recognizeFile("QRgrid.png")
 
 	//drawing2()
-}
-
-type Position struct {
-	X float64
-	Y float64
 }
 
 func angleTest(x1, y1, x2, y2 float64) {
